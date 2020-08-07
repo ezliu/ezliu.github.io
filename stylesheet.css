@@ -52,7 +52,7 @@ p {
 .tags {
   display: flex;
   flex-direction: row;
-  width: 18%;
+  width: 20%;
   justify-content: space-between;
 }
 

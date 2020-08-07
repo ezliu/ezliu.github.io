@@ -40,15 +40,12 @@
       <h2 class="goudy">About</h2>
       <img src="images/evan.jpg">
       <p>
-        Hi! I'm a first-year CS PhD student studying machine learning at
-        Stanford University, funded by a
+        Hi! I'm a second-year CS PhD student studying machine learning at
+        Stanford University, advised by
+        <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>.
+        My research is funded by a
         <a href="https://www.nsfgrfp.org/">National Science Foundation Graduate Fellowship</a>.
-        I'm spending my first year rotating with
-        <a href="https://cs.stanford.edu/people/ebrun/">Emma Brunskill</a>,
-        <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>,
-        and <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>.
-        I also spend one day a week applying machine learning to systems
-        problems at Google Cloud.
+        I also spend one day a week applying machine learning to systems problems at Google Research.
         Previously, I spent a year as a
         <a href="https://ai.google/research/join-us/ai-residency/">Google AI resident</a>
         and before that, completed my
@@ -57,41 +54,35 @@
       </p>
 
       <p>
-        I have two main research interests:
-        First, building intelligent agents via <i>reinforcement learning</i>.
-        In particular, I'm interested in building <i>hierarchical</i> agents that can
-        decompose complex tasks into natural and non-degenerate subtasks
-        (either from trial-and-error interaction with the environment or from
-        demonstrations)
-        and can use its learned hierarchies to conduct <i>efficient exploration</i>.
-        In the past, I've explored these ideas on domains such as game-playing,
-        web tasks (e.g., automatically managing your email) and semantic
-        parsing, and I'm excited to extend these ideas to domains such as
-        healthcare and computer security (e.g., automatically detecting
-        vulnerabilities).
+        My goal is to build intelligent agents that can practically help humans.
+        Toward this end, I work on <i>meta-reinforcement learning</i> to ensure that agents can quickly adapt to new environments and tasks.
+        For example, we might want a robot chef that can quickly adapt to a home kitchen after training inside a factory.
+        In past research, I've examined the meta-exploration problem, where the agent must gather information in its new environment (e.g., find the ingredients in a new kitchen) in order to adapt (<a href="https://arxiv.org/abs/2008.02790">ArXiv 2020</a>).
       </p>
 
       <p>
-        Second,
-        <i>applying machine learning to computer systems</i>.
-        Many computer systems (e.g., networking, caching, scheduling)
-        feature increasingly-complex manually-designed and manually-tuned
-        components (e.g., TCP window sizing, cache eviction policies).
-        This paradigm served well in the past,
-        as no viable alternatives existed and manually-engineered components
-        were more easily interpretable and therefore testable.
-        But as these components have grown more complex over time to meet
-        increasing performance requirements,
-        they have become less and less interpretable while performing suboptimally.
-        I am interested in replacing critical previously manually-engineered
-        components of systems with <i>automatically-learned</i> components, which can
-        both yield superior performance and lead to insights into the system.
-        In particular, I've been working on learning cache-eviction policies,
-        which far outperform their manually-engineered counterparts.
+        I also work toward this goal by applying machine learning to computer
+        systems, where data is plentiful and advances can quickly yield
+        tangible real-world impact.
+        Here, I aim to replace <i>handcrafted</i> heuristics with
+        <i>learned</i> models, which can significantly improve performance,
+        e.g., in cache replacement
+        (<a href="https://arxiv.org/abs/2006.16239">ICML 2020</a>).
+        Of course, directly deploying these learned models requires
+        solving additional challenges (e.g., minimizing model latency and size),
+        but in the meantime, these models can still improve existing systems
+        (e.g., by yielding insights that can be incorporated through more
+        traditional avenues).
+        I am also fascinated by computer security and would love to apply
+        reinforcement learning ideas to automatically detecting
+        vulnerabilities.
       </p>
 
       <p>
-        Outside of research, you can typically find me climbing or thinking about climbing!
+        I love rock climbing and spend most of my free time bouldering indoors,
+        although I'm hoping to climb more outside in the future.
+        I'm always on the lookout for more climbing friends, so let me know if
+        you like to climb or want to try it out!
       </p>
     </div>
 
@@ -102,11 +93,44 @@
       <ul id="paper_list">
         <li>
           <div class="paper">
+            Explore then Execute: Adapting without Rewards via Factorized Meta-Reinforcement Learning
+          </div>
+          <div class="paper_details">
+            <b>Evan Zheran Liu</b>, <a href="https://stanford.edu/~aditir/">Aditi Raghunathan</a>, <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>, <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a>
+            <br>
+            <i>Preprint.</i>
+            <br>
+            <div class="tags" style="width: 50%">
+              <a href="https://arxiv.org/abs/2008.02790">[paper]</a>
+              <a href="https://youtu.be/EiIC0Rkz8-s">[short talk]</a>
+              <a href="https://ezliu.github.io/dream">[website]</a>
+              <a href="https://github.com/ezliu/dream">[code]</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="paper">
+            An Imitation Learning Approach for Cache Replacement
+          </div>
+          <div class="paper_details">
+            <b>Evan Zheran Liu</b>, <a href="https://research.google/people/MiladHashemi/">Milad Hashemi</a>, <a href="https://research.google/people/105739/">Kevin Swersky</a>, <a href="https://research.google/people/ParthasarathyRanganathan/">Parthasarathy Ranganathan</a>, <a href="https://research.google/people/JunwhanAhn/">Junwhan Ahn</a>
+            <br>
+            <i>International Conference on Machine Learning (ICML), 2020</i>
+            <br>
+            <div class="tags" style="width: 20%">
+              <a href="https://arxiv.org/abs/2006.16239">[paper]</a>
+              <a href="https://github.com/google-research/google-research/tree/master/cache_replacement">[code]</a>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="paper">
             Reinforcement Learning on Web Interfaces using Workflow-Guided Exploration
           </div>
           <div class="paper_details">
-            <b>Evan Zheran Liu</b>*, Kelvin Guu*, Panupong Pasupat*, Tianlin
-            Shi, Percy Liang
+            <b>Evan Zheran Liu</b>*, <a href="https://www.kelvinguu.com/">Kelvin Guu</a>*, <a href="https://ppasupat.github.io/">Panupong Pasupat</a>*, <a href="https://www.linkedin.com/in/tianlinshi/">Tianlin Shi</a>, <a href="https://www.linkedin.com/in/tianlinshi/">Percy Liang</a>
             <br>
             (*) denotes equal contribution
             <br>
@@ -124,8 +148,7 @@
             Mapping Natural Language Commands to Web Elements
           </div>
           <div class="paper_details">
-            Panupong Pasupat, Tian-Shun Jiang, <b>Evan Zheran Liu</b>, Kelvin
-            Guu, Percy Liang
+            <a href="https://ppasupat.github.io/">Panupong Pasupat</a>, <a href="https://www.linkedin.com/in/jiangts/">Tian-Shun Jiang</a>, <b>Evan Zheran Liu</b>, <a href="https://www.kelvinguu.com/">Kelvin Guu</a>, <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>
             <br>
             <i>Empirical Methods in Natural Language Processing (EMNLP), 2018</i>
             <br>
@@ -138,17 +161,16 @@
 
         <li>
           <div class="paper">
-            Hierarchy-Driven Exploration
+            Learning Abstract Models for Strategic Exploration and Fast Reward Transfer
           </div>
           <div class="paper_details">
-            <b>Evan Zheran Liu</b>, Ramtin Keramati, Sudarshan Seshadri, Kelvin
-            Guu, Panupong Pasupat, Emma Brunskill, Percy Liang
+            <b>Evan Zheran Liu</b>, <a href="https://rkeramati.github.io/">Ramtin Keramati</a>, <a href="https://www.linkedin.com/in/sudarshanseshadri">Sudarshan Seshadri</a>, <a href="https://www.kelvinguu.com/">Kelvin Guu</a>, <a href="https://ppasupat.github.io/">Panupong Pasupat</a>, <a href="https://cs.stanford.edu/people/ebrun/">Emma Brunskill</a>, <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>
             <br>
-            <i>ICML Workshop on Exploration in Reinforcement Learning, 2018</i>
+            <i>Workshop on Exploration in Reinforcement Learning (ICML), 2018</i>
             <br>
             <div class="tags">
-              <a href="https://sites.google.com/view/erl-2018/accepted-papers?authuser=0">[paper]</a>
-              <a href="">[code]</a>
+              <a href="https://arxiv.org/abs/2007.05896">[paper]</a>
+              <a href="https://github.com/google-research/google-research/tree/master/strategic_exploration">[code]</a>
             </div>
           </div>
         </li>
@@ -159,7 +181,7 @@
             Maximum Marginal Likelihood 
           </div>
           <div class="paper_details">
-            Kelvin Guu, Panupong Pasupat, <b>Evan Zheran Liu</b>, Percy Liang
+            <a href="https://www.kelvinguu.com/">Kelvin Guu</a>, <a href="https://ppasupat.github.io/">Panupong Pasupat</a>, <b>Evan Zheran Liu</b>, <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>
             <br>
             <i>Association for Computational Linguistics (ACL), 2017</i>
             <br>
@@ -177,7 +199,7 @@
     <div id="contact">
       <h2 class="goudy">Contact</h2>
       <p>You can reach me at [my first name][my last name]@cs.stanford.edu</p>
-      <p> Last updated: <b>December 4, 2019</b> </p>
+      <p> Last updated: <b>August 6, 2020</b> </p>
     </div>
   </div>
 </body>
