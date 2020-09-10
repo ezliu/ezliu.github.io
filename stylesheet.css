@@ -49,14 +49,8 @@ p {
   margin-bottom: 5px;
 }
 
-.tags {
-  display: flex;
-  flex-direction: row;
-  width: 20%;
-  justify-content: space-between;
-}
-
 .tags a {
+  margin-right: 15px;
   text-decoration: none;
 }
 
