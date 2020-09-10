@@ -54,16 +54,23 @@
       </p>
 
       <p>
-        My goal is to build intelligent agents that can practically help humans.
-        Toward this end, I work on <i>meta-reinforcement learning</i> to ensure that agents can quickly adapt to new environments and tasks.
-        For example, we might want a robot chef that can quickly adapt to a home kitchen after training inside a factory.
-        In past research, I've examined the meta-exploration problem, where the agent must gather information in its new environment (e.g., find the ingredients in a new kitchen) in order to adapt (<a href="https://arxiv.org/abs/2008.02790">ArXiv 2020</a>).
+        My goal is to build practical agents that can help humans.
+        Since it's often infeasible to directly train agents on the
+        environments they may be deployed, one key aspect of practical agents
+        is the ability to quickly adapt to new environments.
+        For example, it's infeasible to train a robot chef directly in a
+        home kitchen, but it is possible to train the robot on many diverse
+        kitchens in a robot factory.
+        Toward this end, I study the problem of <i>meta-exploration</i>:
+        how to best explore a new environment in order to quickly adapt to it,
+        e.g., by finding ingredients in a new kitchen
+        (<a href="https://arxiv.org/abs/2008.02790">ArXiv 2020</a>).
       </p>
 
       <p>
-        I also work toward this goal by applying machine learning to computer
-        systems, where data is plentiful and advances can quickly yield
-        tangible real-world impact.
+        I also work toward practical agents by applying machine
+        learning to computer systems, where data is plentiful and advances can
+        yield tangible real-world impact.
         Here, I aim to replace <i>handcrafted</i> heuristics with
         <i>learned</i> models, which can significantly improve performance,
         e.g., in cache replacement
